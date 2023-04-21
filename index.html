@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>10 Minute Heist JS</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Dosis:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <div id="wrapper">
+    <div id="status">
+      <div id="message">
+        <p id="turnMessage"></p>
+      </div>
+      <div id="tally">
+        <div id="tally-sets">
+          <div id="set-p" class="tally-set">0</div>
+          <div id="set-f" class="tally-set">0</div>
+          <div id="set-a" class="tally-set">0</div>
+          <div id="set-j" class="tally-set">0</div>
+          <div id="set-t" class="tally-set">0</div>
+          <div id="set-five" class="tally-set">0</div>
+          <div id="set-four" class="tally-set">0</div>
+          <div id="set-three" class="tally-set">0</div>
+          <div id="set-curses" class="tally-set">0</div>
+          <div id="set-exited" class="tally-set"></div>
+      </div>
+    </div>
+    </div>
+    <div id="players">
+    </div>
+    <div id="tower">
+    </div>
+  </div>
+  <nav>
+    <p>Thanks for Playing! Read about the board game and the author of this web conversion, below.</p>
+    <ul>
+      <li>
+        <a href="about.html">About 10 Minute Heist</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <script src="heist.js"></script>
+
+
+</body>
+
+
+<!--
+  SETS
+  'light', 'dark', 'full', 'cresecent'
+  
+  LOCATIONS
+  tower
+  row
+  below
+  above
+  deck
+  card
+  haul
+  currentPlayer
+  previousPlayer
+  otherPlayers
+  
+  ACTIONS
+  look
+  discard
+  duplicate
+  swap
+  move card
+  takeCard(fromPlayer)
+  giveCard(toPlayer)
+  player order
+  takeAnotherTurn
+  scoring
+  reduceCurses
+  
+  QUALITIES (card)
+  hasCurse
+  nonCurse
+  hasCertainNumber //3, 4, 5
+  gainPrestige
+  
+  TIMES
+  endGame
+  takeCard
+  
+  STATES (card)
+  face-up
+  face-down
+  
+  ICONS
+  prestige-1
+  prestige-2
+  curse
+  
+  // {name: 'Codex of Truth',
+  // numbers: [4], suits: ['t', 'j'], curses: 1, set: 'crescent',
+  // description: 'You must reveal your face down card to the other players.',
+  // immediate: function(){} },
+  
+-->
+
+
